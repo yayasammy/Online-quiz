@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Quiz Website</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex; /* Flexbox layout to ensure main content and sidebar are side by side */
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: #4a90e2;
+            width: 250px;
+            padding: 2rem;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            color: white;
+            text-align: center;
+            height: 100vh;
+        }
+
+        aside h1 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        /* Main content area */
+        main {
+            flex: 1; /* Takes up the remaining space next to the sidebar */
+            padding: 4rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            margin: 2rem;
+            margin-left: 270px; /* Ensures the content starts after the sidebar */
+        }
+
+        main h1 {
+            font-size: 3rem;
+            color: #4a90e2;
+            margin-bottom: 1.5rem;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        main img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 2rem 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: #4a90e2;
+            padding: 1rem;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <h1>Quiz Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main>
+        <h1>About Us</h1>
+        <p>Welcome to Our Online Quiz, your go-to destination for fun and interactive quizzes! Our mission is to provide a platform where you can test your knowledge, challenge yourself, and learn new things in an engaging way.</p>
+        
+        <p>Thank you for being a part of our journey. If you have any questions or feedback, feel free to <a href="contact.html">contact us</a>. We're always here to help!</p>
+        <img src="question.png" alt="Quiz">
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Quiz Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

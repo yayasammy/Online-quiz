@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Quiz Website</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex; /* Flexbox layout to ensure main content and sidebar are side by side */
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: #4a90e2;
+            width: 250px;
+            padding: 2rem;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            color: white;
+            text-align: center;
+            height: 100vh;
+        }
+
+        aside h1 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        /* Main content area */
+        main {
+            flex: 1; /* Takes up the remaining space next to the sidebar */
+            padding: 4rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            margin: 2rem;
+            margin-left: 270px; /* Ensures the content starts after the sidebar */
+        }
+
+        main h1 {
+            font-size: 3rem;
+            color: #4a90e2;
+            margin-bottom: 1.5rem;
+        }
+
+        .quiz-question {
+            margin-bottom: 1.5rem;
+        }
+
+        form input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            padding: 0.5rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1.2rem;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #357abd;
+        }
+
+        #resultsDisplay {
+            font-size: 1.2rem;
+            color: #4a90e2;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: #4a90e2;
+            padding: 1rem;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <h1>Quiz Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main>
+        <h1>Take the Quiz</h1>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. Which element is represented by the symbol 'Na'?</p>
+                <input type="radio" name="q1" value="A"> A. Sulphur<br>
+                <input type="radio" name="q1" value="B"> B. Neon<br>
+                <input type="radio" name="q1" value="C"> C. Sodium<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. What is the currency of Japan?</p>
+                <input type="radio" name="q2" value="A"> A. Yen<br>
+                <input type="radio" name="q2" value="B"> B. Won<br>
+                <input type="radio" name="q2" value="C"> C. Yuan<br>
+            </div>
+            <div class="quiz-question">
+                <p>3. Which programming language is known as the language of the web?</p>
+                <input type="radio" name="q3" value="A"> A. Python<br>
+                <input type="radio" name="q3" value="B"> B. C++<br>
+                <input type="radio" name="q3" value="C"> C. JavaScript<br>
+            </div>
+            <div class="quiz-question">
+                <p>4. Which famous artist painted the Mona Lisa?</p>
+                <input type="radio" name="q4" value="A"> A. Vincent van Gogh<br>
+                <input type="radio" name="q4" value="B"> B. Leonardo Da Vinci<br>
+                <input type="radio" name="q4" value="C"> C. Claude Monet<br>
+            </div>
+            <div class="quiz-question">
+                <p>5. What is the largest organ in the human body?</p>
+                <input type="radio" name="q5" value="A"> A. Liver<br>
+                <input type="radio" name="q5" value="B"> B. Skin<br>
+                <input type="radio" name="q5" value="C"> C. Bones<br>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Quiz Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
